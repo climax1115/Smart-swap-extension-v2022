@@ -1,0 +1,44 @@
+.card-body .card-option {
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.option-active {
+    border-bottom: 3px rgb(144, 219, 40) solid !important;
+}
+
+* {
+    vertical-align: middle;
+}
+
+.option-active h3 {
+    color: rgb(144, 219, 40) !important;
+}
+
+table {
+    max-height: 300px;
+}
+
+table tr td.second {
+    text-align: right;
+}
+
+.view-trans {
+    color: blue;
+    cursor: pointer;
+}
+
+.send-info {
+    color: rgb(187, 183, 183);
+}
+
+#setting {
+    margin-top: 30px;
+}
+
+.d-flex {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

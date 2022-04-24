@@ -1,0 +1,187 @@
+// @import "~bootstrap/scss/bootstrap";
+
+.App {
+  vertical-align: middle;
+  z-index: 100000000;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  font-family: monospace;
+  width: 513px;
+
+  #btn-close,
+  #btn-option {
+    cursor: pointer;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  i {
+    color: white;
+  }
+
+  i:hover {
+    color: rgb(145, 220, 39);
+  }
+
+  background-color: rgb(35, 36, 41);
+  min-height: 100vh;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // font-size: calc(10px + 2vmin);
+  font-size: 16px;
+  color: white;
+
+  img {
+    vertical-align: middle;
+  }
+
+  .custom-select {
+    color: black;
+    background-color: white;
+
+    option {
+      background-color: white;
+    }
+
+    option:active {
+      background-color: white;
+    }
+  }
+
+  #extension-body {
+
+    position: relative;
+    padding: 20px 20px 0px 20px;
+
+    .text-bold {
+      font-weight: bold;
+    }
+
+    #checkout {
+
+
+      hr.list-hr {
+        color: rgb(30, 30, 30);
+        border-bottom: 1px white solid;
+      }
+
+      #feeInfo {
+        text-align: center;
+      }
+
+      #btn-check {
+        vertical-align: middle;
+        height: 70px;
+        font-size: 28px;
+        font-weight: bold;
+        background-color: rgb(145, 220, 39);
+        color: white;
+        border-bottom: 7px rgb(116, 170, 35) solid;
+        border-radius: 0px;
+      }
+
+      #btn-check:hover {
+        background-color: rgb(116, 170, 35);
+      }
+
+
+      #btn-recv {
+        cursor: pointer;
+        /* border-bottom: rgb(100, 100, 100) 2px solid; */
+        color: rgb(184, 169, 169) !important;
+      }
+
+      #btn-recv:hover {
+        background-color: rgb(80, 80, 80);
+      }
+
+    }
+    #saved-dollar{
+      font-size: 24px;
+      color: rgb(145, 220, 39);
+      text-align: center;
+    }
+
+    #ledset {
+      vertical-align: middle;
+
+      .card-option {
+        text-align: center;
+        cursor: pointer;
+        border-bottom: 3px solid white;
+        color: white;
+      }
+
+      .card-option.option-active {
+        border-bottom: 3px rgb(144, 219, 40) solid !important;
+
+        h3 {
+          color: rgb(144, 219, 40) !important;
+        }
+      }
+
+      table {
+        tr {
+          td.first {
+            .send {
+              color: white;
+              font-weight: bold;
+            }
+
+            .send-info {
+              color: rgb(187, 183, 183);
+            }
+          }
+
+          td.second {
+            text-align: right;
+
+            .amount {
+              color: white;
+            }
+
+            .view-trans {
+              color: rgb(55, 64, 232);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.drop-down {
+  background-color: white;
+}

@@ -1,0 +1,36 @@
+{
+  "short_name": "Smart SWAP  v2022",
+  "description": "Smart SWAP extension v2022",
+  "name": "Smart SWAP Extension",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+   "128": "icon.png"
+  },  
+  "permissions": [
+    "activeTab",
+    "tabs", 
+    "contextMenus", 
+    "storage",
+    "scripting"
+  ],
+  "web_accessible_resources" : ["*.html"],
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "browser_action": {
+    "default_popup":"index.html",
+    "default_icon": "icon.png",
+    "default_title": "SWAP extension v2022"
+  },
+  "background":{
+    "scripts":["jquery.js", "background.js"],
+    "persistent":false
+  },
+  "content_scripts": [
+    {
+
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery.js", "contentScript.js"]
+    }
+  ]
+}
